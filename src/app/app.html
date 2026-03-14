@@ -1,7 +1,31 @@
-<nav class="navbar">
-  <a routerLink="/">Home</a>
-  <a routerLink="/jobs">Joburi</a>
-  <a routerLink="/login">Login</a>
-</nav>
+<div class="container">
 
-<router-outlet></router-outlet>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">JobPortal</div>
+    <div class="nav-links">
+    <button class="nav-btn" routerLink="/">Home</button>
+    <button class="nav-btn" routerLink="/jobs">Find Jobs</button>
+
+      <button class="nav-btn" routerLink="/statistics">
+        Statistics
+      </button>
+
+      <button class="nav-btn" routerLink="/reviews">
+        Reviews
+      </button>
+      <button class="nav-btn">Post Job</button>
+      <button class="login-btn">Login</button>
+      <button class="register-btn">Register</button>
+    </div>
+  </nav>
+
+  <div class="main-container">
+  <router-outlet></router-outlet>  
+</div>
+
+  <footer>
+    <p>© 2026 JobPortal. All rights reserved.</p>
+  </footer>
+</div>
+

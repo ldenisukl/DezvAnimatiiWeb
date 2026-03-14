@@ -12,4 +12,5 @@ export const routes: Route[] = [
   { path: 'jobs/:id', component: JobDetails },
   { path: 'apply', component: Apply },
   { path: 'reviews', component: Reviews },
+  {path: 'statistics', loadComponent: () => import('./pages/statistics/statistics').then(m => m.Statistics)}
 ];
